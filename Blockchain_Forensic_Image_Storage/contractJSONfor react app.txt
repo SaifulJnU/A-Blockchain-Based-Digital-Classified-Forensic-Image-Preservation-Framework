@@ -1,0 +1,201 @@
+[
+{
+"anonymous": false,
+"inputs": [
+{
+"indexed": false,
+"internalType": "string",
+"name": "action",
+"type": "string"
+},
+{
+"indexed": false,
+"internalType": "address",
+"name": "uploader",
+"type": "address"
+}
+],
+"name": "FileUploadedEvent",
+"type": "event",
+"signature": "0x09b4a9d4e432544073816c687a5a6d6e5c8ef151a3cc55eabab7de7ca2ecdc45"
+},
+{
+"inputs": [],
+"name": "contractName",
+"outputs": [
+{
+"internalType": "string",
+"name": "",
+"type": "string"
+}
+],
+"stateMutability": "view",
+"type": "function",
+"constant": true,
+"signature": "0x75d0c0dc"
+},
+{
+"inputs": [
+{
+"internalType": "uint256",
+"name": "_id",
+"type": "uint256"
+}
+],
+"name": "deleteFile",
+"outputs": [],
+"stateMutability": "nonpayable",
+"type": "function",
+"signature": "0xc5b42006"
+},
+{
+"inputs": [
+{
+"internalType": "uint256",
+"name": "_id",
+"type": "uint256"
+}
+],
+"name": "deleteFileForever",
+"outputs": [],
+"stateMutability": "nonpayable",
+"type": "function",
+"signature": "0xdd986f16"
+},
+{
+"inputs": [
+{
+"internalType": "uint256",
+"name": "_id",
+"type": "uint256"
+},
+{
+"internalType": "string",
+"name": "_name",
+"type": "string"
+},
+{
+"internalType": "string",
+"name": "_des",
+"type": "string"
+}
+],
+"name": "editFileDeatils",
+"outputs": [],
+"stateMutability": "nonpayable",
+"type": "function",
+"signature": "0x2b8b3c8f"
+},
+{
+"inputs": [
+{
+"internalType": "uint256",
+"name": "_fileId",
+"type": "uint256"
+}
+],
+"name": "getFileOf",
+"outputs": [
+{
+"components": [
+{
+"internalType": "uint256",
+"name": "fileId",
+"type": "uint256"
+},
+{
+"internalType": "string",
+"name": "fileHash",
+"type": "string"
+},
+{
+"internalType": "uint256",
+"name": "fileSize",
+"type": "uint256"
+},
+{
+"internalType": "string",
+"name": "fileType",
+"type": "string"
+},
+{
+"internalType": "string",
+"name": "fileName",
+"type": "string"
+},
+{
+"internalType": "string",
+"name": "fileDes",
+"type": "string"
+},
+{
+"internalType": "uint256",
+"name": "uploadTime",
+"type": "uint256"
+},
+{
+"internalType": "address",
+"name": "uploader",
+"type": "address"
+}
+],
+"internalType": "struct OurStorageDapp.File",
+"name": "",
+"type": "tuple"
+}
+],
+"stateMutability": "view",
+"type": "function",
+"constant": true,
+"signature": "0x4495e216"
+},
+{
+"inputs": [],
+"name": "getTotalFileCount",
+"outputs": [
+{
+"internalType": "uint256",
+"name": "",
+"type": "uint256"
+}
+],
+"stateMutability": "view",
+"type": "function",
+"constant": true,
+"signature": "0xc46e2092"
+},
+{
+"inputs": [
+{
+"internalType": "string",
+"name": "_fileHash",
+"type": "string"
+},
+{
+"internalType": "uint256",
+"name": "_fileSize",
+"type": "uint256"
+},
+{
+"internalType": "string",
+"name": "_fileType",
+"type": "string"
+},
+{
+"internalType": "string",
+"name": "_fileName",
+"type": "string"
+},
+{
+"internalType": "string",
+"name": "_fileDescription",
+"type": "string"
+}
+],
+"name": "uploadFile",
+"outputs": [],
+"stateMutability": "nonpayable",
+"type": "function",
+"signature": "0xe82d9d33"
+}
+]
